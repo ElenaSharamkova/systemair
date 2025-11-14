@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://systemairlab.by/</loc>
   </url>
-
   <url>
     <loc>https://systemairlab.by/aerodinamicheskie-ispytaniya-ventilyatsii.html</loc>
   </url>
-
   <url>
     <loc>https://systemairlab.by/ispytanie-dymovyh-kanalov.html</loc>
   </url>
-
   <url>
     <loc>https://systemairlab.by/ispytaniya-sistem-dymoudaleniya.html</loc>
   </url>
-
   <url>
-    <loc>https://systemairlab.by/ispytaniya-germetichnosti-ventilyatsii.html</loc>
+    <loc>https://systemairlab.by/ispytaniya-germetichnosti-ventilyatsii</loc>
   </url>
-
 </urlset>
