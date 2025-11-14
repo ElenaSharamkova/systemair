@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аэродинамические испытания систем вентиляции | Систем Эир – испытания вентиляции и дымовых каналов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Систем Эир — испытания вентиляции в Могилеве и по всей Беларуси: аэродинамические испытания систем вентиляции, испытания на герметичность систем вентиляции, паспортизация, испытания систем дымоудаления, дымовых труб, сертификационные испытания и другие виды испытаний.">
+    <meta name="keywords" content="аэродинамические испытания вентиляции, испытания систем дымоудаления, паспортизация вентиляции, сертификационные испытания, испытания на герметичность систем вентиляции, испытания дымовых каналов, Могилев">
+    <style>
+        :root {
+            --primary: #0b3d2e;
+            --primary-dark: #06261d;
+            --accent: #b5e254;
+            --accent-soft: #e4f4cf;
+            --text: #111;
+            --bg-light: #f6f8f6;
+            --bg-dark: #061410;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--text);
+            background: #fff;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .top-bar {
+            background: var(--bg-dark);
+            color: #f5f5f5;
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+
+        .top-bar-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .top-bar span {
+            margin-right: 15px;
+            white-space: nowrap;
+        }
+
+        .top-bar .highlight-link {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        header {
+            border-bottom: 1px solid #e2e8e5;
+            background: rgba(255, 255, 255, 0.98);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo-block {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-svg {
+            height: 60px;
+            width: auto;
+            display: block;
+        }
+
+        .logo-title {
+            font-weight: 800;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--primary);
+        }
+
+        .logo-subtitle {
+            font-size: 11px;
+            color: #546f61;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-size: 15px;
+        }
+
+        nav a {
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.2s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .burger {
+            display: none;
+            width: 32px;
+            height: 28px;
+            border-radius: 6px;
+            border: 1px solid #c7d2cc;
+            background: #f9faf9;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .burger-lines {
+            width: 18px;
+            height: 14px;
+            position: relative;
+        }
+
+        .burger-lines span {
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary);
+            border-radius: 999px;
+            transition: transform 0.2s ease, top 0.2s ease, opacity 0.2s ease;
+        }
+
+        .burger-lines span:nth-child(1) { top: 2px; }
+        .burger-lines span:nth-child(2) { top: 6px; }
+        .burger-lines span:nth-child(3) { top: 10px; }
+
+        .burger.open .burger-lines span:nth-child(1) {
+            top: 6px;
+            transform: rotate(45deg);
+        }
+
+        .burger.open .burger-lines span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .burger.open .burger-lines span:nth-child(3) {
+            top: 6px;
+            transform: rotate(-45deg);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease, color 0.2s ease;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(7, 51, 39, 0.35);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #f6fff0;
+            border: 1px solid #e8f5e1;
+        }
+
+        .btn-outline:hover {
+            background: #ffffff;
+            color: var(--primary-dark);
+        }
+
+        .hero {
+            background: radial-gradient(circle at top left, #113b2c 0, #071c15 40%, #020807 85%);
+            color: #f7fff4;
+            padding: 60px 16px 40px;
+        }
+
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.8fr);
+            gap: 30px;
+            align-items: center;
+        }
+
+        .hero-kicker {
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--accent);
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 18px;
+            color: #d9e7dd;
+        }
+
+        .hero-benefits {
+            margin-bottom: 24px;
+            font-size: 14px;
+            color: #e3f2e7;
+        }
+
+        .hero-benefits li {
+            margin-bottom: 6px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .hero-card {
+            background: linear-gradient(145deg, rgba(6, 29, 22, 0.9), rgba(4, 18, 14, 0.95));
+            border-radius: 14px;
+            padding: 18px;
+            border: 1px solid rgba(181, 226, 84, 0.3);
+            box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-card h3 { font-size: 16px; margin-bottom: 6px; }
+        .hero-card p { font-size: 13px; color: #e1f5e4; margin-bottom: 8px; }
+        .hero-card small { font-size: 12px; color: #c7ddce; }
+
+        main section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 16px;
+        }
+
+        main h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .service-card {
+            background: var(--bg-light);
+            border-radius: 14px;
+            padding: 16px 16px 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #d7e4dc;
+            box-shadow: 0 4px 12px rgba(12, 44, 32, 0.08);
+        }
+
+        .service-card h3 {
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #103429;
+        }
+
+        .service-card p {
+            font-size: 13px;
+            color: #4a5b52;
+            margin-bottom: 10px;
+        }
+
+        .service-tag {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #7c947f;
+            margin-bottom: 4px;
+        }
+
+        .service-actions {
+            margin-top: auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .service-actions .btn {
+            font-size: 13px;
+            padding: 7px 12px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        .about-text p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #28352f;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .stat-card {
+            background: var(--accent-soft);
+            border-radius: 14px;
+            padding: 14px;
+            border: 1px solid rgba(181, 226, 84, 0.7);
+        }
+
+        .stat-number {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #3c4b3f;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .benefit-card {
+            background: var(--bg-light);
+            border-radius: 14px;
+            padding: 16px;
+            border: 1px solid #d7e4dc;
+            box-shadow: 0 4px 10px rgba(12, 44, 32, 0.06);
+            font-size: 14px;
+            color: #2c3b32;
+        }
+
+        .benefit-title {
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #103429;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.6fr);
+            gap: 24px;
+        }
+
+        .contact-list li {
+            list-style: none;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .contact-list strong {
+            min-width: 110px;
+            display: inline-block;
+        }
+
+        form {
+            background: var(--bg-light);
+            padding: 18px;
+            border-radius: 14px;
+            border: 1px solid #d7e4dc;
+            box-shadow: 0 4px 12px rgba(12, 44, 32, 0.08);
+        }
+
+        form .form-row { margin-bottom: 10px; }
+
+        form label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            font-size: 14px;
+            padding: 8px 9px;
+            border-radius: 8px;
+            border: 1px solid #c0cfc7;
+            outline: none;
+            background: #ffffff;
+        }
+
+        form textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        form input:focus,
+        form textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 1px rgba(11, 61, 46, 0.15);
+        }
+
+        footer {
+            background: var(--bg-dark);
+            color: #c7d5cf;
+            font-size: 13px;
+            padding: 16px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        footer a {
+            color: var(--accent);
+        }
+
+        @media (max-width: 900px) {
+            .hero-inner,
+            .services-grid,
+            .about-grid,
+            .contact-wrapper,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 800px) {
+            nav ul {
+                position: absolute;
+                top: 56px;
+                right: 0;
+                left: 0;
+                padding: 10px 16px 14px;
+                flex-direction: column;
+                gap: 10px;
+                background: rgba(255, 255, 255, 0.98);
+                border-bottom: 1px solid #dfe7e2;
+                display: none;
+            }
+
+            nav ul.open {
+                display: flex;
+            }
+
+            .burger {
+                display: inline-flex;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 26px; }
+            .hero h2 { font-size: 16px; }
+        }
+
+        @media (max-width: 480px) {
+            .top-bar-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero {
+                padding-top: 40px;
+            }
+
+            .logo-svg {
+                height: 42px;
+            }
+        }
+		.cookie-banner {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #0b3d2ed9;
+    color: #ffffff;
+    padding: 16px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-top: 3px solid #b5e254;
+    backdrop-filter: blur(6px);
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cookie-banner a {
+    color: #b5e254;
+    text-decoration: underline;
+}
+
+.cookie-btn {
+    background: #b5e254;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b3d2e;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cookie-btn:hover {
+    background: #d5f879;
+    transform: translateY(-1px);
+}
+
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="top-bar-inner">
+        <div>
+            <span>Тел.: +375-33-370-97-12</span>
+            <span>г. Могилев, ул. Северная, д.2, оф.4</span>
+        </div>
+        <div>
+            <span><a class="highlight-link" href="tel:+375333709712">Позвонить</a></span>
+            <a href="#contacts" class="highlight-link">Оставить заявку</a>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="header-inner">
+        <div class="logo-block">
+            <!-- SVG-логотип, стилизованный под твой вариант -->
+            <svg class="logo-svg" viewBox="0 0 120 120" aria-hidden="true">
+                <rect x="20" y="20" width="80" height="80" fill="#ffffff"
+                      stroke="#0b3d2e" stroke-width="2" transform="rotate(45 60 60)"/>
+                <rect x="26" y="26" width="68" height="68" fill="#ffffff"
+                      stroke="#0b3d2e" stroke-width="2" transform="rotate(45 60 60)"/>
+                <rect x="32" y="32" width="56" height="56" fill="#ffffff"
+                      stroke="#0b3d2e" stroke-width="2" transform="rotate(45 60 60)"/>
+                <text x="50%" y="62%" text-anchor="middle"
+                      font-family="Georgia, 'Times New Roman', serif"
+                      font-size="52" fill="#0b3d2e">S</text>
+                <text x="54%" y="32%" text-anchor="middle"
+                      font-family="Georgia, 'Times New Roman', serif"
+                      font-size="16" fill="#0b3d2e">A</text>
+            </svg>
+            <div>
+                <div class="logo-title">СИСТЕМ ЭИР</div>
+                <div class="logo-subtitle">Испытания систем вентиляции и не только</div>
+            </div>
+        </div>
+
+        <nav>
+            <ul id="mainNav">
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#benefits">Преимущества</a></li>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <button class="burger" id="burgerBtn" aria-label="Меню">
+                <div class="burger-lines">
+                    <span></span><span></span><span></span>
+                </div>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="hero">
+    <div class="hero-inner">
+        <div>
+            <div class="hero-kicker">Аэродинамические испытания систем вентиляции</div>
+            <h1>Аэродинамические испытания вентиляции, испытания на герметичность систем вентиляции и дымовых труб</h1>
+            <h2>Проводим испытания вентиляции в Могилеве и по всей Беларуси: аэродинамические испытания систем вентиляции, испытания на герметичность систем вентиляции, паспортизация, испытания систем дымоудаления, дымовых труб, сертификационные испытания и другие виды испытаний.</h2>
+
+            <ul class="hero-benefits">
+                <li>Проверка технического состояния вентиляционных и дымовых каналов.</li>
+                <li>Аэродинамические испытания систем вентиляции и систем дымоудаления с оформлением протоколов и паспортов.</li>
+                <li>Испытания на герметичность систем вентиляции и дымовых труб.</li>
+                <li>Технические рекомендации по оптимизации работы вентиляции и снижению эксплуатационных затрат.</li>
+            </ul>
+
+            <div class="hero-actions">
+                <a href="#contacts" class="btn btn-primary">Оставить заявку</a>
+                <a href="#services" class="btn btn-outline">Посмотреть услуги</a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <h3>ООО «Систем Эир»</h3>
+            <p>Мы специализируемся на испытаниях: на герметичность систем вентиляции и дымовых труб, аэродинамических испытаниях и паспортизации систем вентиляции в жилых, административных и производственных зданиях.</p>
+            <small>Работаем в строгом соответствии с требованиями ТНПА и действующим законодательством Республики Беларусь. По итогам нашей работы вы получаете документы, принимаемые контролирующими органами.</small>
+        </div>
+    </div>
+</section>
+
+<main>
+    <section id="services">
+        <h2>Услуги компании по испытаниям вентиляции</h2>
+       <div class="service-card">
+    <div>
+        <div class="service-tag">Аэродинамические испытания</div>
+        <h3>Измерение параметров систем вентиляции и паспортизация (ГОСТ 12.3.018-79)</h3>
+        <p>Проводим аэродинамические испытания вентиляции: замеры на приточных и вытяжных системах, расчет фактического расхода воздуха и кратности воздухообмена, сравнение результатов с проектной документацией и нормативными требованиями.</p>
+    </div>
+    <div class="service-actions" style="gap:8px;">
+        <a href="aerodinamicheskie-ispytaniya-ventilyatsii.html" class="btn btn-outline">Подробнее</a>
+        <a href="#contacts" class="btn btn-primary">Заказать</a>
+    </div>
+</div>
+
+            <div class="service-card">
+    <div>
+        <div class="service-tag">Испытания вентиляционных и дымовых труб</div>
+        <h3>Испытания на прочность и герметичность систем вентиляции (СТБ 2522-2018 (EN 12237:2003)</h3>
+        <p>Проводим испытания на смонтированных объектах, что помогает проверить качество монтажных работ, оптимизировать работу вентиляции и снизить эксплуатационные затраты. Также выполняем испытания для сертификации продукции на соответствие требованиям ТР 2025/013/BY.</p>
+    </div>
+    <div class="service-actions" style="gap:8px;">
+        <a href="ispytanie-dymovyh-kanalov.html" class="btn btn-outline">Подробнее</a>
+        <a href="#contacts" class="btn btn-primary">Заказать</a>
+    </div>
+</div>
+
+            <div class="service-card">
+                <div>
+                    <div class="service-tag">Проверка состояния</div>
+                    <h3>Проверка технического состояния дымовых и вентиляционных каналов (СП 4.02.07-2024, ТКП 629-2018)</h3>
+                    <p>Проверяем состояние дымовых и вентиляционных каналов в жилых, административных и производственных зданиях, выявляем засоры, нарушения тяги и другие дефекты. По итогам оформляем протоколы и акты испытаний.</p>
+                </div>
+                <div class="service-actions">
+                    <a href="#contacts" class="btn btn-primary">Заказать</a>
+                </div>
+            </div>
+
+           <div class="service-card">
+    <div>
+        <div class="service-tag">Противодымная защита</div>
+        <h3>Испытания систем противодымной защиты (НПБ 23-2010)</h3>
+        <p>Проводим испытания систем дымоудаления и подпора воздуха в соответствии с НПБ 23-2010. Проверяем работоспособность, расход воздуха, параметры давления и оформляем протоколы испытаний.</p>
+    </div>
+    <div class="service-actions" style="gap:8px;">
+        <a href="ispytaniya-sistem-dymoudaleniya.html" class="btn btn-outline">Подробнее</a>
+        <a href="#contacts" class="btn btn-primary">Заказать</a>
+    </div>
+</div>
+
+            <div class="service-card">
+                <div>
+                    <div class="service-tag">Дымовые трубы</div>
+                    <h3>Испытания дымовых труб (СТБ 2039-2010)</h3>
+                    <p>Проводим измерения тяги, определяем класс по давлению и оцениваем соответствие дымовых труб требованиям СТБ 2039-2010, а также проверяем качество монтажа и техническое состояние.</p>
+                </div>
+                <div class="service-actions">
+                    <a href="#contacts" class="btn btn-primary">Заказать</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div>
+                    <div class="service-tag">Монтаж</div>
+                    <h3>Монтаж и наладка систем вентиляции</h3>
+                    <p>Выполняем монтаж, регулировку и наладку систем вентиляции. Оформляем комплект исполнительной документации для сдачи объекта в эксплуатацию и сопровождаем заказчика в ходе проверок.</p>
+                </div>
+                <div class="service-actions">
+                    <a href="#contacts" class="btn btn-primary">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits">
+        <h2>Почему с нами удобно работать</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-title">Понимание требований контролирующих органов</div>
+                <p>Мы имеем аккредитованную в национальной системе аккредитации лабораторию (аттестат аккредитации № BY/112 2.5106) и работаем строго в соответствии с действующими нормативными документами. Понимаем, какие результаты испытаний и пакеты документов ожидают контролирующие органы.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-title">Прозрачные результаты испытаний</div>
+                <p>В протоколах испытаний систем вентиляции фиксируем реальные измерения, указываем фактические параметры и даём понятные технические рекомендации по устранению несоответствий, если они выявляются.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-title">Подстраиваемся под график заказчика</div>
+                <p>Проводим испытания в удобное для вас время, чтобы минимизировать влияние на работу торговых залов, офисов и производственных линий, в том числе в вечернее и ночное время по согласованию.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>О компании «Систем Эир»</h2>
+                <p>Общество с ограниченной ответственностью «Систем Эир» специализируется на испытаниях, наладке и паспортизации систем вентиляции и противодымной защиты.</p>
+                <p>Мы работаем с жилыми домами, офисными центрами, торговыми объектами и промышленными площадками. Наша задача — обеспечить корректную и безопасную работу систем вентиляции, комфортный микроклимат и соответствие требованиям нормативной документации по испытаниям вентиляции и дымовых каналов.</p>
+                <p>По результатам испытаний вы получаете протоколы, акты и паспорта систем вентиляции, которые принимаются надзорными органами и используются при сдаче объекта в эксплуатацию и проведении проверок.</p>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">10+ лет</div>
+                    <div class="stat-label">Опыт специалистов в сфере вентиляции и инженерных систем</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">Объектов с проведёнными испытаниями и наладкой вентиляции</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Готовность подстроиться под график работы вашего объекта</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты и реквизиты</h2>
+        <div class="contact-wrapper">
+            <div>
+                <ul class="contact-list">
+                    <li><strong>Наименование:</strong> Общество с ограниченной ответственностью «Систем Эир»</li>
+                    <li><strong>УНП:</strong> 790784517</li>
+                    <li><strong>Адрес:</strong> г.Могилев, ул. Северная, д.2, оф.4</li>
+                    <li><strong>Телефон:</strong> <a href="tel:+375333709712">+375-33-370-97-12</a></li>
+                    <li><strong>р/с:</strong> BY93SLAN3012 1689 4001 6000 0000</li>
+                    <li><strong>БИК:</strong> SLANBY22</li>
+                    <li><strong>Банк:</strong> ЗАО Банк ВТБ (Беларусь), Республика Беларусь, г.Могилев, ул. Ленинская, д.54</li>
+                </ul>
+                <p style="font-size: 13px; margin-top: 10px; color:#4a5b52;">
+                    Оставьте заявку через форму или свяжитесь по телефону — подберём формат испытаний и подготовим коммерческое предложение под ваш объект.
+                </p>
+            </div>
+            <div>
+                <form action="https://formsubmit.co/sistem.air@mail.ru" method="POST">
+                    <input type="hidden" name="_subject" value="Новая заявка с сайта Систем Эир (испытания вентиляции)">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form-row">
+                        <label for="name">Ваше имя</label>
+                        <input id="name" name="name" type="text" placeholder="Иван Иванов" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Телефон</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+375-__-___-__-__" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="object">Объект / организация</label>
+                        <input id="object" name="object" type="text" placeholder="Название здания или компании">
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Комментарий</label>
+                        <textarea id="message" name="message" placeholder="Кратко опишите, какие испытания вентиляции вас интересуют."></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div>© 2025 Общество с ограниченной ответственностью «Систем Эир». Все права защищены.
+		<br>
+		<a href="privacy-policy.html" style="color:#b5e254;">Политика конфиденциальности и Cookies</a>
+		</div>
+        <div>Испытания вентиляции в Могилеве и по Беларуси. Тел.: <a href="tel:+375333709712">+375-33-370-97-12</a></div>
+		
+    </div>
+</footer>
+
+<script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const nav = document.getElementById('mainNav');
+
+    burgerBtn.addEventListener('click', () => {
+        burgerBtn.classList.toggle('open');
+        nav.classList.toggle('open');
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            burgerBtn.classList.remove('open');
+            nav.classList.remove('open');
+        });
+    });
+</script>
+<div id="cookie-banner" class="cookie-banner">
+    <p>
+        Мы используем файлы Cookies для обеспечения корректной работы сайта
+        и улучшения качества обслуживания. Продолжая использовать сайт, вы соглашаетесь с нашей
+        <a href="privacy-policy.html">Политикой конфиденциальности и Cookies</a>.
+    </p>
+    <button id="cookie-accept" class="cookie-btn">Принять</button>
+</div>
+
+<script>
+    // Проверяем, принято ли решение ранее
+    if (!localStorage.getItem("cookieAccepted")) {
+        document.getElementById("cookie-banner").style.display = "flex";
+    }
+
+    // Принимаем куки
+    document.getElementById("cookie-accept").addEventListener("click", function () {
+        localStorage.setItem("cookieAccepted", "yes");
+        document.getElementById("cookie-banner").style.opacity = "0";
+        setTimeout(() => {
+            document.getElementById("cookie-banner").style.display = "none";
+        }, 300);
+    });
+</script>
+
+</body>
+</html>
