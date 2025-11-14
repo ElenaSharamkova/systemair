@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elenasharamkova.github.io/systemair/sitemap.xml
+Sitemap: https://systemairlab.by/sitemap.xml
