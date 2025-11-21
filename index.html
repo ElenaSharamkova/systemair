@@ -33,7 +33,7 @@
 	<link rel="icon" href="favicon.ico" sizes="any">
 	<link rel="shortcut icon" href="img/favicon-simple.svg" type="image/x-icon">
 
-<link rel="apple-touch-icon" href="img/favicon-apple.png"><!-- 180×180 -->
+	<link rel="apple-touch-icon" href="img/favicon-apple.png"><!-- 180×180 -->
 
 	<!-- Структурированные данные Schema.org -->
 	<script type="application/ld+json">
@@ -56,8 +56,7 @@
   "description": "Испытания систем вентиляции, проверка герметичности, дымовые каналы, системы противодымной защиты."
 }
 </script>
-</head>
-<script type="application/ld+json">
+	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -75,7 +74,7 @@
 }
 </script>
 
-<script type="application/ld+json">
+	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -92,6 +91,8 @@
   "url": "https://systemairlab.by"
 }
 </script>
+</head>
+
 
 <body>
 
@@ -111,7 +112,7 @@
 	<header>
 		<div class="header-inner">
 			<!-- Логотип + название как ссылка на главную -->
-			<a class="logo-block" href="/">
+			<a class="logo-block" href="#hero">
 				<!-- SVG-логотип -->
 				<svg class="logo-svg" viewBox="0 0 120 120" aria-hidden="true">
 					<rect x="20" y="20" width="80" height="80" fill="#ffffff" stroke="#0b3d2e" stroke-width="2"
@@ -185,73 +186,75 @@
 	<main>
 		<section id="services">
 			<h2>Услуги компании по испытаниям вентиляции</h2>
-			<div class="service-card">
-				<div>
-					<div class="service-tag">Аэродинамические испытания</div>
-					<h3>Измерение параметров систем вентиляции и паспортизация (ГОСТ 12.3.018-79)</h3>
-					<p>Проводим аэродинамические испытания вентиляции: замеры на приточных и вытяжных системах, расчет
-						фактического расхода воздуха и кратности воздухообмена, сравнение результатов с проектной
-						документацией и нормативными требованиями.</p>
+			<div class="service-list">
+				<div class="service-card">
+					<div>
+						<div class="service-tag">Аэродинамические испытания</div>
+						<h3>Измерение параметров систем вентиляции и паспортизация (ГОСТ 12.3.018-79)</h3>
+						<p>Проводим аэродинамические испытания вентиляции: замеры на приточных и вытяжных системах, расчет
+							фактического расхода воздуха и кратности воздухообмена, сравнение результатов с проектной
+							документацией и нормативными требованиями.</p>
+					</div>
+					<div class="service-actions">
+						<a href="aerodinamicheskie-ispytaniya-ventilyatsii.html" class="btn btn-outline">Подробнее</a>
+						<a href="#contacts" class="btn btn-primary">Заказать</a>
+					</div>
 				</div>
-				<div class="service-actions">
-					<a href="aerodinamicheskie-ispytaniya-ventilyatsii.html" class="btn btn-outline">Подробнее</a>
-					<a href="#contacts" class="btn btn-primary">Заказать</a>
-				</div>
-			</div>
 
-			<div class="service-card">
-				<div>
-					<div class="service-tag">Испытания вентиляционных и дымовых труб</div>
-					<h3>Испытания на прочность и герметичность систем вентиляции (СТБ 2522-2018 (EN 12237:2003)</h3>
-					<p>Проводим испытания на смонтированных объектах, что помогает проверить качество монтажных работ,
-						оптимизировать работу вентиляции и снизить эксплуатационные затраты. Также выполняем испытания для
-						сертификации продукции на соответствие требованиям ТР 2025/013/BY.</p>
+				<div class="service-card">
+					<div>
+						<div class="service-tag">Испытания вентиляционных и дымовых труб</div>
+						<h3>Испытания на прочность и герметичность систем вентиляции (СТБ 2522-2018 (EN 12237:2003)</h3>
+						<p>Проводим испытания на смонтированных объектах, что помогает проверить качество монтажных работ,
+							оптимизировать работу вентиляции и снизить эксплуатационные затраты. Также выполняем испытания для
+							сертификации продукции на соответствие требованиям ТР 2025/013/BY.</p>
+					</div>
+					<div class="service-actions">
+						<a href="ispytaniya-germetichnosti-ventilyatsii.html" class="btn btn-outline">Подробнее</a>
+						<a href="#contacts" class="btn btn-primary">Заказать</a>
+					</div>
 				</div>
-				<div class="service-actions">
-					<a href="ispytaniya-germetichnosti-ventilyatsii.html" class="btn btn-outline">Подробнее</a>
-					<a href="#contacts" class="btn btn-primary">Заказать</a>
-				</div>
-			</div>
 
-			<div class="service-card">
-				<div>
-					<div class="service-tag">Проверка состояния</div>
-					<h3>Проверка технического состояния дымовых и вентиляционных каналов (СП 4.02.07-2024, ТКП 629-2018)</h3>
-					<p>Проверяем состояние дымовых и вентиляционных каналов в жилых, административных и производственных
-						зданиях, выявляем засоры, нарушения тяги и другие дефекты. По итогам оформляем протоколы и акты
-						испытаний.</p>
+				<div class="service-card">
+					<div>
+						<div class="service-tag">Проверка состояния</div>
+						<h3>Проверка технического состояния дымовых и вентиляционных каналов (СП 4.02.07-2024, ТКП 629-2018)
+						</h3>
+						<p>Проверяем состояние дымовых и вентиляционных каналов в жилых, административных и производственных
+							зданиях, выявляем засоры, нарушения тяги и другие дефекты. По итогам оформляем протоколы и акты
+							испытаний.</p>
+					</div>
+					<div class="service-actions">
+						<a href="proverka-dymovyh-i-ventilyacionnyh-kanalov.html" class="btn btn-outline">Подробнее</a>
+						<a href="#contacts" class="btn btn-primary">Заказать</a>
+					</div>
 				</div>
-				<div class="service-actions">
-					<a href="proverka-dymovyh-i-ventilyacionnyh-kanalov.html" class="btn btn-outline">Подробнее</a>
-					<a href="#contacts" class="btn btn-primary">Заказать</a>
-				</div>
-			</div>
 
-			<div class="service-card">
-				<div>
-					<div class="service-tag">Противодымная защита</div>
-					<h3>Испытания систем противодымной защиты (НПБ 23-2010)</h3>
-					<p>Проводим испытания систем дымоудаления и подпора воздуха в соответствии с НПБ 23-2010. Проверяем
-						работоспособность, расход воздуха, параметры давления и оформляем протоколы испытаний.</p>
+				<div class="service-card">
+					<div>
+						<div class="service-tag">Противодымная защита</div>
+						<h3>Испытания систем противодымной защиты (НПБ 23-2010)</h3>
+						<p>Проводим испытания систем дымоудаления и подпора воздуха в соответствии с НПБ 23-2010. Проверяем
+							работоспособность, расход воздуха, параметры давления и оформляем протоколы испытаний.</p>
+					</div>
+					<div class="service-actions">
+						<a href="ispytaniya-sistem-dymoudaleniya.html" class="btn btn-outline">Подробнее</a>
+						<a href="#contacts" class="btn btn-primary">Заказать</a>
+					</div>
 				</div>
-				<div class="service-actions">
-					<a href="ispytaniya-sistem-dymoudaleniya.html" class="btn btn-outline">Подробнее</a>
-					<a href="#contacts" class="btn btn-primary">Заказать</a>
-				</div>
-			</div>
 
-			<div class="service-card">
-				<div>
-					<div class="service-tag">Дымовые трубы</div>
-					<h3>Испытания дымовых труб (СТБ 2039-2010)</h3>
-					<p>Проводим измерения тяги, определяем класс по давлению и оцениваем соответствие дымовых труб
-						требованиям СТБ 2039-2010, а также проверяем качество монтажа и техническое состояние.</p>
+				<div class="service-card">
+					<div>
+						<div class="service-tag">Дымовые трубы</div>
+						<h3>Испытания дымовых труб (СТБ 2039-2010)</h3>
+						<p>Проводим измерения тяги, определяем класс по давлению и оцениваем соответствие дымовых труб
+							требованиям СТБ 2039-2010, а также проверяем качество монтажа и техническое состояние.</p>
+					</div>
+					<div class="service-actions">
+						<a href="ispytanie-dymovyh-kanalov.html" class="btn btn-outline">Подробнее</a>
+						<a href="#contacts" class="btn btn-primary">Заказать</a>
+					</div>
 				</div>
-				<div class="service-actions">
-					<a href="ispytanie-dymovyh-kanalov.html" class="btn btn-outline">Подробнее</a>
-					<a href="#contacts" class="btn btn-primary">Заказать</a>
-				</div>
-			</div>
 			</div>
 		</section>
 
@@ -409,7 +412,7 @@
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
 
-	Google tag (gtag.js)
+	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXBWL71ZM9"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -418,7 +421,7 @@
 
 		gtag('config', 'G-MXBWL71ZM9');
 	</script>
-	<!-- /Google Analytics 4
+	<!-- /Google Analytics 4-->
 </body>
 
 </html>
